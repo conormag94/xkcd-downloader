@@ -16,7 +16,7 @@ echo "Current comic: #$COMIC_NUM"
 grep -o http:\/\/\[a-z\.\/_\]\* res.json  > url.txt
 
 # Download png from the url listed in the temp file
-cat url.txt | xargs curl -G -s -o $COMIC_NUM.png
+cat url.txt | xargs curl -G -s -o "$COMIC_NUM-xkcd.png"
 rm url.txt
 rm res.json
 echo "XKCD #$COMIC_NUM saved!"
