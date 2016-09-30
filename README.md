@@ -14,3 +14,5 @@ Run it
 ```
 ./xkcd.sh
 ```
+
+It will be saved like `1740-xkcd.png` with 1740 being the current comic number.
